@@ -1,1 +1,99 @@
-theme: jekyll-theme-minimal
+# Site settings
+title:
+  en: LocalSolutionsDev
+  de: LocalSolutionsDev
+email: LocalSolutionsDev@damain.com
+mobile: +63 256324125
+favicon: /images/favicon.png
+logo:
+footer_logo:
+description:
+  en: content
+  de: content
+about:
+  en: about the author
+  de: about the author
+owner:
+  name: LocalSolutionsDev # or company name
+  url: "https://LocalSolutionsDev.github.io" # your URL
+copyright:
+  en: "&copy; 2019 <a href='#'>LocalSolutionsDev</a>. All rights reserved. Created by <a href='#'>LocalSolutionsDev</a>"
+  de: "&copy; 2019 <a href='#'>LocalSolutionsDev</a>. All rights reserved. Created by <a href='#'>LocalSolutionsDev</a>"
+url: "https://LocalSolutionsDev.github.io/" # the base hostname & protocol for this site
+baseurl: "/localsolutions" # the subpath of your site, e.g. /blog
+            # Note you'll have to move your robots.txt to the root if you want it used.
+            # And list multiple sitemaps if there are other subdirectories you want indexed
+            # besides this blog.
+index:
+  en:
+  de: indexde.html
+
+# Language Setting
+lang: en
+languages: ["en", "de"]
+
+# Enable or disable the site search
+#search_enabled: true
+
+# Social handle for website
+social:
+  facebook    : https://facebook.com/#
+  twitter     : https://twitter.com/#
+  pinterest   : https://www.pinterest.com/#/
+  linkedin    : https://linkedin.com/in/#
+  instagram   : https://www.instagram.com/#/
+  #dribbble:
+  #vine:
+  #flickr:
+  #skype:
+  #tumblr:
+  #youtube:
+
+# Build settings
+permalink: pretty
+kramdown:
+  # parse markdown inside block-level HTML tag
+  # parse_block_html: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+exclude: ["LICENSE.txt", "README.md"]
+include: ['_pages']
+
+collections:
+  project:
+    output: true
+  talks:
+    output: true
+    permalink: /:collection/:title
+  services:
+    output: true
+  publications:
+    output: true
+  events:
+    output: true
+  skills:
+    output: true
+
+defaults:
+    -
+     scope:
+         path: ""
+     values:
+         layout: post
+         lang: en
+         base-url: "/"
+    -
+     scope:
+         path: de
+     values:
+         lang: de
+         base-url: "/de/"
+
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - github-pages

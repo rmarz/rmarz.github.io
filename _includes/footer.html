@@ -1,0 +1,64 @@
+<!--================================
+        START FOOTER AREA
+=================================-->
+<!-- fixed-bottom -->
+<footer class="footer-area">
+    <div class="mini-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- start .social -->
+                        <div class="social social--color--filled">
+                            <ul>
+                                {% for socloc in site.social %}
+                                {% if socloc[1] %}
+                                {% if socloc[0] == 'email' %}
+                                <li><a target="_blank" href="{%
+                                    if socloc[1] contains '@' %}mailto:{{ socloc[1] }}
+                                    {% else %}{{ socloc[1] }}
+                                    {% endif %}" class="fa-envelope"><span class="label">E-mail</span></a></li>
+                                {% else %}
+                                <li><a target="_blank" href="{{ socloc[1] }}"><span class="fa fa-{{ socloc[0] }}"></span></a></li>
+                                {% endif %}
+                                {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <!-- end /.social -->
+                    <div class="copyright-text p-2">
+                        <p> {{ site.copyright[page.lang] }}
+                        </p>
+                    </div>
+                    <div class="go_top">
+                        <span class="lnr lnr-chevron-up"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--================================
+        END FOOTER AREA
+    =================================-->
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0C5etf1GVmL_ldVAichWwFFVcDfa1y_c"></script> -->
+<!-- Scripts -->
+<script src="{{ "/assets/js/vendor/jquery/jquery-1.12.3.js" | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/jquery/popper.min.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/jquery/uikit.min.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/bootstrap.min.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/chart.bundle.min.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/grid.min.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/jquery-ui.min.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/jquery.barrating.min.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/jquery.countdown.min.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/jquery.counterup.min.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/jquery.easing1.3.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/owl.carousel.min.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/slick.min.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/tether.min.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/trumbowyg.min.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/vendor/waypoints.min.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/dashboard.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ "/assets/js/main.js"  | prepend: site.baseurl | prepend: site.url }}"></script>
+<!-- <script src="{{ "/assets/js/map.js"  | prepend: site.baseurl | prepend: site.url }}"></script> -->
+{% include tracking-footer.html %}
