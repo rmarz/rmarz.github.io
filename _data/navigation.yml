@@ -7,31 +7,31 @@ languages:
     links:
     - title: "Home"
       url: /
-    - title: "CV"
-      url: /skills/
-    - title: "Projects"
-      url: /projects/
-    - title: "Experiences"
-      url: /experiences/
+#    - title: "CV"
+#      url: /skills/
+#    - title: "Projects"
+#      url: /projects/
+#    - title: "Experiences"
+#      url: /experiences/
     - title: "Services"
       url: /services/
-    - title: "Publications"
-      url: /publications/
+#    - title: "Publications"
+#      url: /publications/
     - title: "Talks"
       url: /talks/
   - language: "de"
     links:
     - title: "Home"
       url: /de/
-    - title: "CV"
-      url: /de/skills/
-    - title: "Projekte"
-      url: /de/projects/
-    - title: "Erfahrungen"
-      url: /de/experiences/
+ #   - title: "CV"
+ #     url: /de/skills/
+ #   - title: "Projekte"
+ #     url: /de/projects/
+ #   - title: "Erfahrungen"
+ #     url: /de/experiences/
     - title: "Services"
       url: /de/services/
-    - title: "Veröffentlichungen"
-      url: /de/publications/
+#    - title: "Veröffentlichungen"
+#      url: /de/publications/
     - title: "Talks"
       url: /de/talks/

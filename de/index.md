@@ -1,6 +1,6 @@
 ---
 layout: landing
-title: Home
+#title: Home
 ref: index
 lang: de
 permalink: /de/
