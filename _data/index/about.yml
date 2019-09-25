@@ -21,7 +21,7 @@ languages:
         image1_alt: alt text
         image2: "/images/Home-its-people-de.png"
         image2_alt: alt text
-        image3: "/images/CarajanDB.jpg"
+        image3: "/images/bee.png"
         image3_alt: alt text
   - language: "de"
     about:
@@ -40,6 +40,6 @@ languages:
         image1_alt: alt text
         image2: "/images/Home-its-people-de.png"
         image2_alt: alt text
-        image3: "/images/CarajanDB.jpg"
+        image3: "/images/bee.png"
         image3_alt: alt text
 
