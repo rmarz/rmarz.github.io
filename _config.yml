@@ -1,26 +1,26 @@
 # Site settings
 title:
-  en: LocalSolutionsDev
-  de: LocalSolutionsDev
-email: LocalSolutionsDev@damain.com
-mobile: +63 256324125
-favicon: /images/favicon.png
-logo:
+  en: Robert Marz, Databee - The IT-Architects
+  de: Robert Marz, Databee - Die IT-Architekten
+email: robert.marz@databee.org
+mobile: +49 (172) 139 1530
+favicon: /images/bee.png
+logo: /images/Databee-Logo.jpg
 footer_logo:
 description:
-  en: content
-  de: content
+  en: Description goes here
+  de: Beschreibung hier einfügen
 about:
-  en: about the author
-  de: about the author
+  en: about (en)
+  de: abput (de)
 owner:
-  name: LocalSolutionsDev # or company name
-  url: "https://LocalSolutionsDev.github.io" # your URL
+  name: Robert Marz, Databee - Die IT-Architekten
+  url: "https://robbie.databee.org" 
 copyright:
-  en: "&copy; 2019 <a href='#'>LocalSolutionsDev</a>. All rights reserved. Created by <a href='#'>LocalSolutionsDev</a>"
-  de: "&copy; 2019 <a href='#'>LocalSolutionsDev</a>. All rights reserved. Created by <a href='#'>LocalSolutionsDev</a>"
-url: "https://LocalSolutionsDev.github.io/" # the base hostname & protocol for this site
-baseurl: "/localsolutions" # the subpath of your site, e.g. /blog
+  en: "&copy; 2019 <a href='#'>Robert Marz</a>. All rights reserved. Created by <a href='#'>LocalSolutionsDev</a>"
+  de: "&copy; 2019 <a href='#'>Robert Marz</a>. All rights reserved. Created by <a href='#'>LocalSolutionsDev</a>"
+url: "http://127.0.0.1:4000" # the base hostname & protocol for this site
+baseurl: "/" # the subpath of your site, e.g. /blog
             # Note you'll have to move your robots.txt to the root if you want it used.
             # And list multiple sitemaps if there are other subdirectories you want indexed
             # besides this blog.
@@ -33,15 +33,16 @@ lang: en
 languages: ["en", "de"]
 
 # Enable or disable the site search
-#search_enabled: true
+search_enabled: true
 
 # Social handle for website
 social:
-  facebook    : https://facebook.com/#
-  twitter     : https://twitter.com/#
-  pinterest   : https://www.pinterest.com/#/
-  linkedin    : https://linkedin.com/in/#
-  instagram   : https://www.instagram.com/#/
+  #facebook    : https://facebook.com/#
+  twitter     : https://twitter.com/RobbieDatabee
+  #pinterest   : https://www.pinterest.com/#/
+  linkedin    : https://linkedin.com/in/RobbieDatabee
+  xing:         https://linkedin.com/in/RobbieDatabee
+  #instagram   : https://www.instagram.com/#/
   #dribbble:
   #vine:
   #flickr:
@@ -94,6 +95,6 @@ defaults:
 
 
 # Plugins
-plugins:
+plugins_dir:
   - jekyll-feed
   - github-pages
