@@ -17,15 +17,15 @@ owner:
   name: Databee - Die IT-Architekten # or company name
   url: "https://robbie.databee.org" # your URL
 copyright:
-  en: "&copy; 2019 <a href='#'>https://www.databee.org</a>. All rights reserved."
-  de: "&copy; 2019 <a href='#'>https://www.databee.org</a>. All rights reserved."
-url: "http://127.0.0.1:4000" # the base hostname & protocol for this site
-baseurl: "" # the subpath of your site, e.g. /blog
+  en: "&copy; 2020 <a href='#'>https://www.databee.org</a>. All rights reserved."
+  de: "&copy; 2020 <a href='#'>https://www.databee.org</a>. All rights reserved."
+url: "https://robbie.databee.org" # the base hostname & protocol for this site
+baseurl: "/" # the subpath of your site, e.g. /blog
             # Note you'll have to move your robots.txt to the root if you want it used.
             # And list multiple sitemaps if there are other subdirectories you want indexed
             # besides this blog.
 index:
-  en:
+  en: index.html
   de: indexde.html
 
 # Language Setting
@@ -33,7 +33,7 @@ lang: de
 languages: ["en", "de"]
 
 # Enable or disable the site search
-#search_enabled: true
+search_enabled: true
 
 # Social handle for website
 social:
@@ -65,18 +65,18 @@ include: ['_pages']
 
 collections:
   project:
-    output: true
+    output: false
   talks:
     output: true
     permalink: /:collection/:title
   services:
-    output: true
+    output: false
   publications:
-    output: true
+    output: false
   events:
-    output: true
+    output: false
   skills:
-    output: true
+    output: false
 
 defaults:
     -
