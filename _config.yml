@@ -17,8 +17,11 @@ owner:
   name: Databee - Die IT-Architekten # or company name
   url: "https://robbie.databee.org" # your URL
 copyright:
-  en: "&copy; 2020 <a href='#'>https://www.databee.org</a>. All rights reserved."
-  de: "&copy; 2020 <a href='#'>https://www.databee.org</a>. All rights reserved."
+  en: "&copy; 2020 <a href='https://www.databee.org'>Databee - Die IT-Architekten</a>. All rights reserved."
+  de: "&copy; 2020 <a href='https://www.databee.org'>Databee - Die IT-Architekten</a>. All rights reserved."
+imprint:
+  en: "Imprint - Site Notice"
+  de: "Impressum"
 url: "https://robbie.databee.org" # the base hostname & protocol for this site
 baseurl: "/" # the subpath of your site, e.g. /blog
             # Note you'll have to move your robots.txt to the root if you want it used.
@@ -98,3 +101,5 @@ defaults:
 plugins_dir:
   - jekyll-feed
   - github-pages
+
+github: [metadata]

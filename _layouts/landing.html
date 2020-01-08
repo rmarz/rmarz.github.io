@@ -117,10 +117,11 @@ layout: default
 <!--================================
         END OVERVIEW AREA
     =================================-->
+{% if page.show.publications %}    
 <!--================================
         START FEATURE AREA
     =================================-->
-{% if collections.publications.output == true %}    
+
 <section class="feature_start section--padding">
     {% for item in site.data.index.publication.languages %}
     {% if item.language == page.lang %}
@@ -167,14 +168,15 @@ layout: default
     </div>
     <!-- end /.container -->
 </section>
-{% endif %}
 <!--================================
         END FEATURE AREA
     =================================-->
-<!--================================
+{% endif %}
+
+{% if page.ficken == "YES" %}
+    <!--================================
         START CALL TO ACTION AREA
     =================================-->
-{% if collections.skills.output == true %}
 <section class="call-to-action bgimage">
     {% for item in site.data.index.skills.languages %}
     {% if item.language == page.lang %}
@@ -198,14 +200,14 @@ layout: default
     {% endif %}
     {% endfor %}
 </section>
-{% endif %}
 <!--================================
         END CALL TO ACTION AREA
 =================================-->
+{% endif %}
+{% if page.show[services] == "true" %}
 <!--================================
         START FEATURE AREA
 =================================-->
-{% if collections.services.output == true %}
 <section class="features section--padding">
     {% for item in site.data.index.services.languages %}
     {% if item.language == page.lang %}
@@ -252,7 +254,15 @@ layout: default
     {% endif %}
     {% endfor %}
 </section>
-{% endif %}
 <!--================================
         END FEATURE AREA
     =================================-->
+{% endif %}
+
+<pre>
+    page inspect: {{ page | inspect }}
+    page: {{ page | jsonify | escape }}
+    layout: {{ layout | jsonify | escape }}
+    content: {{ content | jsonify | escape }}
+    paginator: {{ paginator | jsonify | escape }}
+</pre>
