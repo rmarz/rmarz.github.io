@@ -13,12 +13,12 @@ languages:
 #      url: /projects/
 #    - title: "Experiences"
 #      url: /experiences/
-    - title: "Services"
-      url: /services/
+#    - title: "Services"
+#      url: /services/
 #    - title: "Publications"
 #      url: /publications/
-    - title: "Talks"
-      url: /talks/
+#    - title: "Talks"
+#      url: /talks/
   - language: "de"
     links:
     - title: "Home"
@@ -29,9 +29,9 @@ languages:
  #     url: /de/projects/
  #   - title: "Erfahrungen"
  #     url: /de/experiences/
-    - title: "Services"
-      url: /de/services/
+ #   - title: "Services"
+ #     url: /de/services/
 #    - title: "Veröffentlichungen"
 #      url: /de/publications/
-    - title: "Talks"
-      url: /de/talks/
+ #   - title: "Talks"
+ #     url: /de/talks/

@@ -7,7 +7,7 @@ languages:
     banner:
       - text1: Senior Technical Architect
         text2: with a database centric view of the world.
-        text3: Robert Marz is an Oracle ACE and member of its-people, a Germany based professional services company.
+        text3: Robert Marz is an Independent Consultant and Oracle ACE.
         buttontext1: About Me
         buttontext2: Contact Me
         image: "/images/2019-07-Mt-Rainier.jpg"
@@ -16,7 +16,7 @@ languages:
     banner:
       - text1: Senior Technical Architect
         text2: mit datenbankzentrischem Weltbild.
-        text3: Robert Marz ist Oracle ACE und Mitglied bei its-people, einer in Deutschland ansässigen IT-Dienstleistungsfirma.
+        text3: Robert Marz ist selbstständiger Berater und Oracle ACE.
         buttontext1: Über mich
         buttontext2: Kontaktieren Sie mich
         image: "/images/2019-07-Mt-Rainier.jpg"

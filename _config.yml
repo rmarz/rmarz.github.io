@@ -67,12 +67,12 @@ collections:
   project:
     output: false
   talks:
-    output: true
+    output: false
     permalink: /:collection/:title
   services:
     output: false
   publications:
-    output: false
+    output: true
   events:
     output: false
   skills:
