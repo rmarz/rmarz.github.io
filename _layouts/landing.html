@@ -9,7 +9,7 @@ layout: default
     {% if item.language == page.lang %}
     {% for it in item.banner %}
     <div class="bg_image_holder">
-        <img src="{{ it.image | prepend: site.baseurl | prepend: site.url }}" alt="{{ it.image_alt }}">
+        <img src="{{ it.image }}" alt="{{ it.image_alt }}">
     </div>
     <!-- start hero-content -->
     <div class="hero-content content_above">
@@ -75,7 +75,7 @@ layout: default
         <div class="row">
             <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
                 <div class="overview-icon">
-                    <img src="{{ it.image | prepend: site.baseurl | prepend: site.url }}" alt="{{ it.image_alt }}">
+                    <img src="{{ it.image }}" alt="{{ it.image_alt }}">
                     <span>
                         <a href="mailto:Robert.Marz@databee.org">
                             <span class="lnr lnr-envelope info-icon"></span> Robert.Marz@databee.org </a>
@@ -96,14 +96,14 @@ layout: default
         <!-- end /.row -->
         <div class="row m-5">
             <div class="col-md-4 v_middle">
-                <img src="{{ it.image1 | prepend: site.baseurl | prepend: site.url }}" alt="it.image1_alt" class="img-fluid">
+                <img src="{{ it.image1 }}" alt="it.image1_alt" class="img-fluid">
             </div>
             <div class="col-md-4 v_middle">
-                <img src="{{ it.image2 | prepend: site.baseurl | prepend: site.url }}" alt="it.image2_alt" class="img-fluid">
+                <img src="{{ it.image2 }}" alt="it.image2_alt" class="img-fluid">
             </div>
             <!--
             <div class="col-md-4 v_middle">
-                <img src="{{ it.image3 | prepend: site.baseurl | prepend: site.url }}" alt="it.image3_alt" class="img-fluid">
+                <img src="{{ it.image3 }}" alt="it.image3_alt" class="img-fluid">
             </div>
             -->
         </div>
@@ -231,7 +231,7 @@ layout: default
             <div class="col-lg-4">
                 <div class="feature">
                     <div class="feature__img">
-                        <img src="{{ service.image | prepend: site.baseurl | prepend: site.url }}" alt="">
+                        <img src="{{ service.image }}" alt="">
                     </div>
                     <div class="feature__title">
                         <a href="{{site.baseurl}}{{ service.url }}">
@@ -259,10 +259,13 @@ layout: default
     =================================-->
 {% endif %}
 
+{% if page.show.debugoutput %}
 <pre>
     page inspect: {{ page | inspect }}
     page: {{ page | jsonify | escape }}
     layout: {{ layout | jsonify | escape }}
     content: {{ content | jsonify | escape }}
     paginator: {{ paginator | jsonify | escape }}
+    site inspect: {{ site | inspect }}
 </pre>
+{% endif %}

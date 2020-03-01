@@ -8,4 +8,5 @@ show:
   publications: false
   services: false
   skills: false
+  debugoutput: false
 ---
