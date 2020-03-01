@@ -28,11 +28,11 @@ baseurl: "/" # the subpath of your site, e.g. /blog
             # And list multiple sitemaps if there are other subdirectories you want indexed
             # besides this blog.
 index:
-  en: index.html
-  de: indexde.html
+  en: /en/index.html
+  de: /de/index.html
 
 # Language Setting
-lang: de
+lang: en
 languages: ["en", "de"]
 
 # Enable or disable the site search
@@ -88,7 +88,7 @@ defaults:
      values:
          layout: post
          lang: en
-         base-url: "/"
+         base-url: "/en/"
     -
      scope:
          path: de
@@ -101,5 +101,8 @@ defaults:
 plugins_dir:
   - jekyll-feed
   - github-pages
+  - jekyll-redirect-from
 
+whitelist:
+  - jekyll-redirect-from
 github: [metadata]

@@ -1,7 +1,7 @@
 ---
 layout: page2
 title:  Our Services
-permalink: /services/
+permalink: /en/services/
 ref: services
 lang: en
 subtitle: Here you can read upon on services

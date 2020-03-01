@@ -3,7 +3,7 @@ layout: page
 title: Resume
 ref: skills
 lang: en
-permalink: /skills/
+permalink: /en/skills/
 excerpt: MY skillsets
 subtitle: Here you can view my professional resume in a practical timeline
 ---
