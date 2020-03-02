@@ -4,9 +4,5 @@ title: Robbie Databee
 ref: index
 lang: de
 permalink: /de/
-show:
-  publications: false
-  services: true
-  skills: false
-  debugoutput: false
 ---
+{% include debug.html %}

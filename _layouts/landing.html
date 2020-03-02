@@ -117,7 +117,7 @@ layout: default
 <!--================================
         END OVERVIEW AREA
     =================================-->
-{% if page.show.publications %}    
+{% if site.data.navigation.show.publications %}
 <!--================================
         START FEATURE AREA
     =================================-->
@@ -173,7 +173,64 @@ layout: default
     =================================-->
 {% endif %}
 
-{% if page.show.skills %}
+{% if site.data.navigation.show.conferences %}
+<!--================================
+        START FEATURE AREA
+    =================================-->
+
+<section class="feature_start section--padding">
+    {% for item in site.data.index.publication.languages %}
+    {% if item.language == page.lang %}
+    {% for it in item.publication %}
+        <!-- start container -->
+        <div class="container">
+            <div class="row">
+                <!-- start col-md-12 -->
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>{{ it.heading }}</h1>
+                        <p>{{ it.subheading }}</p>
+                    </div>
+                </div>
+                <!-- end /.col-md-12 -->
+            </div>
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        {% assign publications = site.publications | where:"lang", page.lang %}
+        <!-- start row -->
+        <div class="row">
+            {% for publication in publications %}
+            <div class="col-lg-4">
+                <div class="feature">
+                    <div class="feature__img">
+                        <img src="{{ publication.image | prepend: site.baseurl | prepend: site.url }}" alt="">
+                    </div>
+                    <div class="feature__title">
+                        <a href="{{site.baseurl}}{{ publication.url }}">
+                            <h3>{{ publication.title }}</h3>
+                        </a>
+                    </div>
+                    <div class="feature__desc">
+                        <p>{{ publication.content | markdownify | strip_html | truncate: 70 }}</p>
+                    </div>
+                </div>
+                <!-- end /.feature -->
+            </div>
+            {% endfor %}
+            <!-- end /.col-md-4 -->
+        </div>
+        <!-- end /.row -->
+    </div>
+    <!-- end /.container -->
+</section>
+<!--================================
+        END FEATURE AREA
+    =================================-->
+{% endif %}
+
+
+{% if site.data.navigation.show.skills %}
     <!--================================
         START CALL TO ACTION AREA
     =================================-->
@@ -204,7 +261,7 @@ layout: default
         END CALL TO ACTION AREA
 =================================-->
 {% endif %}
-{% if page.show.services %}
+{% if site.data.navigation.show.services %}
 <!--================================
         START FEATURE AREA
 =================================-->
@@ -259,13 +316,3 @@ layout: default
     =================================-->
 {% endif %}
 
-{% if page.show.debugoutput %}
-<pre>
-    page inspect: {{ page | inspect }}
-    page: {{ page | jsonify | escape }}
-    layout: {{ layout | jsonify | escape }}
-    content: {{ content | jsonify | escape }}
-    paginator: {{ paginator | jsonify | escape }}
-    site inspect: {{ site | inspect }}
-</pre>
-{% endif %}

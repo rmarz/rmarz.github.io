@@ -20,8 +20,12 @@ copyright:
   en: "&copy; 2020 <a href='https://www.databee.org'>Databee - Die IT-Architekten</a>. All rights reserved."
   de: "&copy; 2020 <a href='https://www.databee.org'>Databee - Die IT-Architekten</a>. All rights reserved."
 imprint:
-  en: "Imprint - Site Notice"
-  de: "Impressum"
+  en: 
+    title: "Imprint - Site Notice"
+    url: "/en/imprint/"
+  de: 
+    title: "Impressum"
+    url: "/de/impressum/"
 url: "https://robbie.databee.org" # the base hostname & protocol for this site
 baseurl: "/" # the subpath of your site, e.g. /blog
             # Note you'll have to move your robots.txt to the root if you want it used.
@@ -106,3 +110,6 @@ plugins_dir:
 whitelist:
   - jekyll-redirect-from
 github: [metadata]
+
+exclude:
+  - .jekyll-cache
