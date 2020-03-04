@@ -1,13 +1,18 @@
-{% assign conferences = site.conferences | where:"lang", page.lang %}
+{% assign conferences = site.conferences.*  %}
 <div class="row">
+    <ul>
+        <li>confs</li> 
+        {% for post in site.publications %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
     {% for conference in conferences %}
     <!-- start .col-md-4 -->
     <div class="col-lg-4 col-md-6">
         <!-- start .single-product -->
         <div class="product product--card3">
-            <div class="product__thumbnail">
-                <img src="{{ conference.image }}" alt="Image">
-            </div>
             <!-- end /.product__thumbnail -->
             <div class="product-desc">
                 <a href="{{ conference.url }}" class="product_title">
@@ -17,6 +22,9 @@
             </div>
             <div class="text-left p-2">
                 <a href="{{ conference.url }}" class="btn btn--default btn--round btn--white">Read more</a>
+            </div>
+            <div class="product__thumbnail">
+                <img src="{{ conference.image }}" alt="Image">
             </div>
         </div>
         <!-- end /.single-product -->
