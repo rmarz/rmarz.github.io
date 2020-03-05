@@ -9,3 +9,4 @@ description: Ich gebe mein Wissen gerne weiter und habe Spaß am Präsentieren. 
 ---
 
 {% include conferences.html %}
+{% include debug.html %}

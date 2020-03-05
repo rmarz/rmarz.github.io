@@ -84,6 +84,8 @@ collections:
     output: true
   skills:
     output: true
+  conferences:
+    output: true
 
 defaults:
     -
