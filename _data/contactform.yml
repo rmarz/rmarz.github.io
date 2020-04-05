@@ -1,0 +1,17 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+# Contacform Texts
+actionurl: "https://getsimpleform.com/messages?form_api_token=4eef913eb197487677334a9b0aa953df"
+de: 
+  sender: "Ihr Name"
+  email: "Ihre E-Mail Adresse"
+  message: "Ihre Nachricht"
+  submit: "Nachricht senden"
+  thankyouurl: "/de/danke"
+en:
+  sender: "Your name"
+  email: "Your email address"
+  message: "enter your message here"
+  submit: "send"
+  thankyouurl: "/en/thanks"

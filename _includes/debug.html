@@ -1,10 +1,6 @@
 {% if site.data.navigation.show.debugoutput %}
 <pre>
     page inspect: {{ page | inspect }}
-    page: {{ page | jsonify | escape }}
-    layout: {{ layout | jsonify | escape }}
-    content: {{ content | jsonify | escape }}
-    paginator: {{ paginator | jsonify | escape }}
     site inspect: {{ site | inspect }}
 </pre>
 {% endif %}    

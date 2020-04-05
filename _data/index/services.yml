@@ -1,13 +1,13 @@
 #
 # Be aware that even a small syntax error here can lead to failures in output.
 #
-# Home Page Publication
+# Home Page Services
 languages:
-  - language: "en"
-    services:
-      - heading: My services
-        subheading: Those are our 3 most popular services
   - language: "de"
     services:
-      - heading: Meine Leistungen
-        subheading: Das sind unsere 3 beliebtesten Leistungen
+      - heading: Mein Dienstleistungsportfolio
+        subheading: Diese Dienstleistungen können Sie von mir beziehen
+  - language: "en"
+    services:
+      - heading: My Service Portfolio
+        subheading: Order these Services from me
