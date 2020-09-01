@@ -32,7 +32,9 @@ Im Brombeerfeld 26
 60437 Frankfurt  
 
 ## Bildrechte:
-© Robert Marz
+
+- © Robert Marz
+- /images/services/architecture-01.jpeg: © stock.adobe.com - Olivier Le Moal
 
 
 # Disclaimer – rechtliche Hinweise
