@@ -12,7 +12,7 @@ layout: default
             </div>
             <div class="row">
                 <div class="col-lg-12 col-md-12">
-                    <p>{{ page.description }}</p>
+                    <p>{{ page.description|newline_to_br }}</p>
                 </div>
             </div>
             {{ content }}
