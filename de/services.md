@@ -5,6 +5,8 @@ permalink: /de/Dienstleistungen/
 ref: services
 lang: de
 subtitle: Diese Dienstleistungen können Sie von mir beziehen
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi rerum soluta in accusantium aperiam reprehenderit vero delectus, fugiat sapiente repudiandae, esse impedit, iusto repellat iure debitis provident. Dolore eaque officiis fugiat illo voluptatum! A excepturi consequatur, officia saepe, aspernatur dolorem dolore vel, corporis vero laboriosam architecto neque sapiente! Nostrum, assumenda.
+description: "Als Freiberufler biete ich verschiedene IT-Dienstleistungen an. Ich passe mich dabei ganz ihren Bedürfnissen an. 
+Egal, ob eine kleine Unterstützung bei einem technischem Problem, eine ein- oder mehrtägiger Workshop oder eine Langfristige Projektmitarbeit:  
+Sie beauftragen mich - ich liefere."
 ---
 {% include services.html %}

@@ -41,4 +41,4 @@ show:
   skills: false
   conferences: false
   talks: false
-  debugoutput: false
+  debugoutput: true

@@ -89,7 +89,7 @@ layout: default
             </div>
             <!-- end /.col-md-4 -->
             <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
-                {{ it.text }}
+                {{ it.text | markdownify }}
             </div>
             <!-- end /.col-md-5 -->
         </div>
@@ -291,7 +291,7 @@ layout: default
                         <img src="{{ service.image }}" alt="">
                     </div>
                     <div class="feature__title">
-                        <a href="{{site.baseurl}}{{ service.url }}">
+                        <a href="{{ service.url }}">
                             <h3>{{ service.title }}</h3>
                         </a>
                     </div>

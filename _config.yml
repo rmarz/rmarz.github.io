@@ -17,8 +17,8 @@ owner:
   name: Databee - Die IT-Architekten # or company name
   url: "https://robbie.databee.org" # your URL
 copyright:
-  en: "&copy; 2020 <a href='https://www.databee.org'>Databee - Die IT-Architekten</a>. All rights reserved."
-  de: "&copy; 2020 <a href='https://www.databee.org'>Databee - Die IT-Architekten</a>. All rights reserved."
+  en: "&copy; 2020 <a href='http://www.databee.org'>Databee - Die IT-Architekten</a>. All rights reserved."
+  de: "&copy; 2020 <a href='http://www.databee.org'>Databee - Die IT-Architekten</a>. All rights reserved."
 imprint:
   en: 
     title: "Imprint - Site Notice"
@@ -26,6 +26,13 @@ imprint:
   de: 
     title: "Impressum"
     url: "/de/impressum/"
+dsgvo:
+  en: 
+    title: "GDPR Information - (German only)"
+    url: "/en/gdpr/"
+  de: 
+    title: "Datenschutzerklärung"
+    url: "/de/dsgvo/"
 contact:
   en: 
     title: "Contact me"
