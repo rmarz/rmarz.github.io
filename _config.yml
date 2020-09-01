@@ -73,16 +73,13 @@ social:
 
 # Build settings
 permalink: pretty
-kramdown:
+kramdown: 
   # parse markdown inside block-level HTML tag
   # parse_block_html: true
 
 sass:
   sass_dir: _sass
   style: compressed
-
-exclude: ["LICENSE.txt", "README.md"]
-include: ['_pages']
 
 collections:
   project:
@@ -126,4 +123,8 @@ whitelist:
   - jekyll-redirect-from
 github: [metadata]
 exclude:
-  - .jekyll-cache
+  - ".jekyll-cache"
+  - "LICENSE.txt"
+  - "README.md"
+include:
+  - "_pages"

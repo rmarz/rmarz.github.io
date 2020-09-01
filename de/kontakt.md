@@ -9,4 +9,3 @@ permalink: /de/kontakt/
 ## Hinterlassen Sie mir eine Nachricht.
 
 {% include contactform.html %}
-{% include debug.html %}
