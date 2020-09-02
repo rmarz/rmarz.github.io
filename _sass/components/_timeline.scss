@@ -1,0 +1,126 @@
+// this file contains the style for the timline component
+/*****************************
+	-- TIMELINE
+*****************************/
+@import "../common/theme";
+@import "../common/general";
+#conference-timeline {
+  position: relative;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+  .conference-center-line {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    background: #666;
+  }
+  .conference-timeline-content {
+    padding-top: 67px;
+    padding-bottom: 67px;
+  }
+}
+
+.timeline-article {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+  .content-left-container, .content-right-container {
+    max-width: 44%;
+    width: 100%;
+  }
+  .content-left, .content-right {
+    position: relative;
+    width: auto;
+  }
+  h5{
+    text-align: right;
+  }
+  p {
+    padding: 0;
+    font-weight: 400;
+    color: #242424;
+    font-size: 14px;
+    line-height: 24px;
+    position: relative;
+  }
+  li {
+    list-style: initial;
+  }
+
+  .content-left-container {
+    float: left;
+  }
+  .content-right-container {
+    float: right;
+  }
+  .content-left:before, .content-right:before {
+    position: absolute;
+    top: 20px;
+    font-size: 23px;
+    color: #fff;
+  }
+  .meta-date {
+    content: '';
+    display: block;
+    margin-top: 7px;
+    width: 15px;
+    height: 15px;
+    margin-left: 452px;
+    border-radius: 9px;
+    border: 2px solid #9200ee;
+    background-color: #fff;
+    z-index: 2;
+  }
+}
+
+/*===== // Vertical Timeline =====*/
+
+/*===== Resonsive Vertical Timeline =====*/
+@media only screen and (max-width: 830px) {
+  #conference-timeline {
+    .conference-center-line {
+      margin-left: 0;
+      left: 50px;
+    }
+  }
+  .timeline-article {
+    .meta-date {
+      margin-left: 44px;
+      left: 20px;
+    }
+    .content-left-container, .content-right-container {
+      max-width: 100%;
+      width: auto;
+      float: none;
+      margin-left: 110px;
+      min-height: 53px;
+    }
+    .content-left-container {
+      margin-bottom: 20px;
+    }
+    .content-left, .content-right {
+      min-height: 65px;
+      h5{
+        text-align: left;
+      }
+    }
+    .content-right:before {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .timeline-article p {
+    margin: 0;
+    span.article-number {
+      display: none;
+    }
+  }
+}

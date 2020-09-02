@@ -1,0 +1,30 @@
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        {% for item in site.data.navigation.languages %}
+          {% if item.language == page.lang %}
+            {% for link in item.links %}
+              {% if link.url contains "http" %}
+                {% assign url = link.url %}
+              {% else %}
+                {% assign url = link.url | relative_url %}
+              {% endif %}
+                <li>
+                    <a href="{{ url }}">{{ link.title }}</a>
+                </li>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+        {% for page in pages %}
+        <li>
+            <a href="{{ page.url }}" class="{{ page.lang }}">
+                {% if page.lang == 'en' %}
+                <span class="flag-icon flag-icon-um"></span>
+                {% else %}
+                <span class="flag-icon flag-icon-de"></span>
+                {% endif %}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<section class="bgcolor">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-1">
+                <div class="single_blog blog--default" style="margin-top: 30px;">
+                    <article>
+                        <div class="blog__content">
+                            <h4>{{ page.title }}</h4>
+                            {{page.date | date: "%Y-%m-%d"}}
+                            <h6>{{page.activity}}<h6>
+                        </div>
+                        <div class="single_blog_content">
+                            {% if page.bonus %}<p>Bonus-{{page.bonus}}</p>{% endif %}
+                            {% if page.points %}<p>Points-{{page.points}}</p>{% endif %}
+                            <p>{{page.description}}</p>
+                            {{ content }}
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

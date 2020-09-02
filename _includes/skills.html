@@ -1,0 +1,23 @@
+{% assign skills = site.skills | where:"lang", page.lang %}
+<section id="conference-timeline">
+    <div class="conference-center-line"></div>
+    <div class="conference-timeline-content">
+        {% for skills in skills %}
+        <div class="timeline-article">
+            <div class="content-left-container">
+                <div class="content-left">
+                    <h5>{{ skills.duration }}</h5>
+                    <p>{{ skills.position }}</p>
+                </div>
+            </div>
+            <div class="content-right-container">
+                <div class="content-right">
+                    <h4>{{ skills.details }}</h4>
+                    <p>{{ skills.content }}</p>
+                </div>
+            </div>
+            <div class="meta-date"></div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

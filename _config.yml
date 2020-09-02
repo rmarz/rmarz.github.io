@@ -1,1 +1,130 @@
-theme: jekyll-theme-minimal
+# Site settings
+title:
+  en: "Robert Marz, Databee - The IT-Architects"
+  de: "Robert Marz, Databee - Die IT-Architekten"
+email: robert.marz@databee.org
+mobile: "+49 (172) 139 1530"
+favicon: /images/bee.png
+logo:
+footer_logo:
+description:
+  en: "Robert Marz, Databee - The IT-Architects"
+  de: "Robert Marz, Databee - Die IT-Architekten"
+about:
+  en: "About Robbie"
+  de: "Über Robbie"
+owner:
+  name: Databee - Die IT-Architekten # or company name
+  url: "https://robbie.databee.org" # your URL
+copyright:
+  en: "&copy; 2020 <a href='http://www.databee.org'>Databee - Die IT-Architekten</a>. All rights reserved."
+  de: "&copy; 2020 <a href='http://www.databee.org'>Databee - Die IT-Architekten</a>. All rights reserved."
+imprint:
+  en: 
+    title: "Imprint - Site Notice"
+    url: "/en/imprint/"
+  de: 
+    title: "Impressum"
+    url: "/de/impressum/"
+dsgvo:
+  en: 
+    title: "GDPR Information - (German only)"
+    url: "/en/gdpr/"
+  de: 
+    title: "Datenschutzerklärung"
+    url: "/de/dsgvo/"
+contact:
+  en: 
+    title: "Contact me"
+    url: "/en/contact/"
+  de: 
+    title: "Kontaktieren Sie mich"
+    url: "/de/kontakt/"    
+url: "https://robbie.databee.org" # the base hostname & protocol for this site
+baseurl: "/" # the subpath of your site, e.g. /blog
+            # Note you'll have to move your robots.txt to the root if you want it used.
+            # And list multiple sitemaps if there are other subdirectories you want indexed
+            # besides this blog.
+index:
+  en: /en/index.html
+  de: /de/index.html
+
+# Language Setting
+lang: en
+languages: ["en", "de"]
+
+# Enable or disable the site search
+search_enabled: true
+
+# Social handle for website
+social:
+  twitter:   https://twitter.com/RobbieDatabee
+  linkedin:  https://www.linkedin.com/in/robbiedatabee/
+  xing:      https://www.xing.com/profile/Robert_Marz/cv
+  #pinterest   : https://www.pinterest.com/#/
+  #instagram   : https://www.instagram.com/#/
+  #facebook    : https://facebook.com/#
+  #dribbble:
+  #vine:
+  #flickr:
+  #skype:
+  #tumblr:
+  #youtube:
+
+# Build settings
+permalink: pretty
+kramdown: 
+  # parse markdown inside block-level HTML tag
+  # parse_block_html: true
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+collections:
+  project:
+    output: true
+  talks:
+    output: true
+    permalink: /:collection/:title
+  services:
+    output: true
+  publications:
+    output: true
+  events:
+    output: true
+  skills:
+    output: true
+  conferences:
+    output: true
+
+defaults:
+    -
+     scope:
+         path: ""
+     values:
+         layout: post
+         lang: en
+         base-url: "/en/"
+    -
+     scope:
+         path: de
+     values:
+         lang: de
+         base-url: "/de/"
+
+
+# Plugins
+plugins_dir:
+  - jekyll-feed
+  - github-pages
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
+github: [metadata]
+exclude:
+  - ".jekyll-cache"
+  - "LICENSE.txt"
+  - "README.md"
+include:
+  - "_pages"
