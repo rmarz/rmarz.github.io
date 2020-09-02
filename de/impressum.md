@@ -33,9 +33,10 @@ Im Brombeerfeld 26
 
 ## Bildrechte:
 
-- © Robert Marz
-- /images/services/architecture-01.jpeg: © stock.adobe.com - Olivier Le Moal
-
+- ©Robert Marz
+- /images/services/architecture-01.jpeg: ©Olivier Le Moal - stock.adobe.com
+- /images/services/devops-01.jpeg: ©Asha Sreenivas - stock.adobe.com
+- /images/services/disaster-recovery-01.jpeg: ©manusapon - stock.adobe.com
 
 # Disclaimer – rechtliche Hinweise
 
