@@ -3,7 +3,7 @@ layout: page
 title: Experiences
 ref: experience
 lang: en
-permalink: /experiences/
+permalink: /en/experiences/
 excerpt: My Experiences
 subtitle: Here you can view my experience in different industries and fields of technology
 ---

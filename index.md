@@ -1,7 +1,4 @@
 ---
-layout: landing
-#title: Home
-ref: index
-lang: en
-permalink: /
+title: Robbie Databee
+redirect_to: /en
 ---

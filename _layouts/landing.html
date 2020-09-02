@@ -9,7 +9,7 @@ layout: default
     {% if item.language == page.lang %}
     {% for it in item.banner %}
     <div class="bg_image_holder">
-        <img src="{{ it.image | prepend: site.baseurl | prepend: site.url }}" alt="{{ it.image_alt }}">
+        <img src="{{ it.image }}" alt="{{ it.image_alt }}">
     </div>
     <!-- start hero-content -->
     <div class="hero-content content_above">
@@ -31,7 +31,7 @@ layout: default
                         <!-- start .hero__btn-area-->
                         <div class="hero__btn-area">
                             <a href="#about-me" class="btn btn--round btn--lg">{{ it.buttontext1 }}</a>
-                            <a href="#" class="btn btn--round btn--lg">{{ it.buttontext2 }}</a>
+                            <a href="{{ site.contact[page.lang].url }}" class="btn btn--round btn--lg">{{ it.buttontext2 }}</a>
                         </div>
                         <!-- end .hero__btn-area-->
                     </div>
@@ -75,13 +75,13 @@ layout: default
         <div class="row">
             <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
                 <div class="overview-icon">
-                    <img src="{{ it.image | prepend: site.baseurl | prepend: site.url }}" alt="{{ it.image_alt }}">
+                    <img src="{{ it.image }}" alt="{{ it.image_alt }}">
                     <span>
                         <a href="mailto:Robert.Marz@databee.org">
                             <span class="lnr lnr-envelope info-icon"></span> Robert.Marz@databee.org </a>
                     </span>
                     <p>
-                        <a href="https://twitter.com/RobbieDatabee?lang=de" target="_blank">
+                        <a href="https://twitter.com/RobbieDatabee" target="_blank">
                             <span class="fa fa-twitter"></span> @RobbieDatabee
                         </a>
                     </p>
@@ -89,21 +89,21 @@ layout: default
             </div>
             <!-- end /.col-md-4 -->
             <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
-                {{ it.text }}
+                {{ it.text | markdownify }}
             </div>
             <!-- end /.col-md-5 -->
         </div>
         <!-- end /.row -->
         <div class="row m-5">
             <div class="col-md-4 v_middle">
-                <img src="{{ it.image1 | prepend: site.baseurl | prepend: site.url }}" alt="it.image1_alt" class="img-fluid">
+                <img src="{{ it.image1 }}" alt="it.image1_alt" class="img-fluid">
             </div>
             <div class="col-md-4 v_middle">
-                <img src="{{ it.image2 | prepend: site.baseurl | prepend: site.url }}" alt="it.image2_alt" class="img-fluid">
+                <img src="{{ it.image2 }}" alt="it.image2_alt" class="img-fluid">
             </div>
             <!--
             <div class="col-md-4 v_middle">
-                <img src="{{ it.image3 | prepend: site.baseurl | prepend: site.url }}" alt="it.image3_alt" class="img-fluid">
+                <img src="{{ it.image3 }}" alt="it.image3_alt" class="img-fluid">
             </div>
             -->
         </div>
@@ -117,10 +117,11 @@ layout: default
 <!--================================
         END OVERVIEW AREA
     =================================-->
+{% if site.data.navigation.show.publications %}
 <!--================================
         START FEATURE AREA
     =================================-->
-{% if collections.publications.output == true %}    
+
 <section class="feature_start section--padding">
     {% for item in site.data.index.publication.languages %}
     {% if item.language == page.lang %}
@@ -167,14 +168,72 @@ layout: default
     </div>
     <!-- end /.container -->
 </section>
-{% endif %}
 <!--================================
         END FEATURE AREA
     =================================-->
+{% endif %}
+
+{% if site.data.navigation.show.conferences %}
 <!--================================
+        START FEATURE AREA
+    =================================-->
+
+<section class="feature_start section--padding">
+    {% for item in site.data.index.publication.languages %}
+    {% if item.language == page.lang %}
+    {% for it in item.publication %}
+        <!-- start container -->
+        <div class="container">
+            <div class="row">
+                <!-- start col-md-12 -->
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>{{ it.heading }}</h1>
+                        <p>{{ it.subheading }}</p>
+                    </div>
+                </div>
+                <!-- end /.col-md-12 -->
+            </div>
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        {% assign publications = site.publications | where:"lang", page.lang %}
+        <!-- start row -->
+        <div class="row">
+            {% for publication in publications %}
+            <div class="col-lg-4">
+                <div class="feature">
+                    <div class="feature__img">
+                        <img src="{{ publication.image | prepend: site.baseurl | prepend: site.url }}" alt="">
+                    </div>
+                    <div class="feature__title">
+                        <a href="{{site.baseurl}}{{ publication.url }}">
+                            <h3>{{ publication.title }}</h3>
+                        </a>
+                    </div>
+                    <div class="feature__desc">
+                        <p>{{ publication.content | markdownify | strip_html | truncate: 70 }}</p>
+                    </div>
+                </div>
+                <!-- end /.feature -->
+            </div>
+            {% endfor %}
+            <!-- end /.col-md-4 -->
+        </div>
+        <!-- end /.row -->
+    </div>
+    <!-- end /.container -->
+</section>
+<!--================================
+        END FEATURE AREA
+    =================================-->
+{% endif %}
+
+
+{% if site.data.navigation.show.skills %}
+    <!--================================
         START CALL TO ACTION AREA
     =================================-->
-{% if collections.skills.output == true %}
 <section class="call-to-action bgimage">
     {% for item in site.data.index.skills.languages %}
     {% if item.language == page.lang %}
@@ -198,26 +257,26 @@ layout: default
     {% endif %}
     {% endfor %}
 </section>
-{% endif %}
 <!--================================
         END CALL TO ACTION AREA
 =================================-->
+{% endif %}
+{% if site.data.navigation.show.services %}
 <!--================================
         START FEATURE AREA
 =================================-->
-{% if collections.services.output == true %}
 <section class="features section--padding">
-    {% for item in site.data.index.services.languages %}
-    {% if item.language == page.lang %}
-    {% for it in item.services %}
+    {% assign item = site.pages | where: "ref" , 'services' | where: "lang" , page.lang | first %}
     <!-- start container -->
     <div class="container">
         <div class="row">
             <!-- start col-md-12 -->
             <div class="col-md-12">
                 <div class="section-title">
-                    <h1>{{ it.heading }}</h1>
-                    <p>{{ it.subheading }}</p>
+                     <a href="{{ item.permalink }}"><h1>{{ item.title }}</h1></a>
+                     <h3>{{ item.subtitle }}</h3>
+                     <br>
+                     <p>{{ item.description|newline_to_br }}</p>
                 </div>
             </div>
             <!-- end /.col-md-12 -->
@@ -229,15 +288,15 @@ layout: default
             <div class="col-lg-4">
                 <div class="feature">
                     <div class="feature__img">
-                        <img src="{{ service.image | prepend: site.baseurl | prepend: site.url }}" alt="">
+                        <img src="{{ service.image }}" alt="">
                     </div>
                     <div class="feature__title">
-                        <a href="{{site.baseurl}}{{ service.url }}">
+                        <a href="{{ service.url }}">
                             <h3>{{ service.title }}</h3>
                         </a>
                     </div>
                     <div class="feature__desc">
-                        <p>{{ service.content | markdownify | strip_html | truncate: 70 }}</p>
+                        <p>{{ service.content | markdownify | strip_html | truncate: 140 }}</p>
                     </div>
                 </div>
                 <!-- end /.feature -->
@@ -248,11 +307,9 @@ layout: default
         <!-- end /.row -->
     </div>
     <!-- end /.container -->
-    {% endfor %}
-    {% endif %}
-    {% endfor %}
 </section>
-{% endif %}
 <!--================================
         END FEATURE AREA
     =================================-->
+{% endif %}
+

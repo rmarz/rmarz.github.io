@@ -1,0 +1,18 @@
+<p>
+
+<form id="contact-form" 
+        class="form" 
+        action="{{ site.data.contactform.actionurl }}" 
+        method="POST" 
+        enctype="multipart/form-data"
+>
+
+    <input type="text"  placeholder="{{site.data.contactform.[page.lang].sender}}" id="sender" name="sender"  /> 
+    <input type="email" placeholder="{{site.data.contactform.[page.lang].email}}" id="email" name="email"/> 
+    <input type="text"  placeholder="{{site.data.contactform.[page.lang].message}}" id="message" name="message"  /> 
+
+    <input type="submit" value="{{site.data.contactform.[page.lang].submit}}" id="submit" class="btn btn--round btn--lg"/>
+    <input type="hidden" name='redirect_to' value="{{ site.url }}{{site.data.contactform.[page.lang].thankyouurl}}"/>
+    
+        
+</form>

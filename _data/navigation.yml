@@ -6,32 +6,39 @@ languages:
   - language: "en"
     links:
     - title: "Home"
-      url: /
+      url: /en/
 #    - title: "CV"
-#      url: /skills/
+#      url: /en/skills/
 #    - title: "Projects"
-#      url: /projects/
+#      url: /en/projects/
 #    - title: "Experiences"
-#      url: /experiences/
-#    - title: "Services"
-#      url: /services/
-#    - title: "Publications"
-#      url: /publications/
+#      url: /en/experiences
+    - title: "Services"
+      url: /en/services/
+#    - title: "Meet & Greet"
+#      url: /en/conferences/
 #    - title: "Talks"
-#      url: /talks/
+#      url: /en/talks/
   - language: "de"
     links:
     - title: "Home"
       url: /de/
- #   - title: "CV"
- #     url: /de/skills/
- #   - title: "Projekte"
- #     url: /de/projects/
- #   - title: "Erfahrungen"
- #     url: /de/experiences/
- #   - title: "Services"
- #     url: /de/services/
-#    - title: "Veröffentlichungen"
-#      url: /de/publications/
- #   - title: "Talks"
- #     url: /de/talks/
+#    - title: "CV"
+#      url: /de/skills/
+#    - title: "Projekte"
+#      url: /de/projects/
+#    - title: "Erfahrungen"
+#      url: /de/experiences/
+    - title: "Dienstleistungen"
+      url: /de/Dienstleistungen/
+#    - title: "Konferenzen"
+#      url: /de/konferenzen/
+#    - title: "Vorträge"
+#      url: /de/talks/
+show:
+  publications: false
+  services: true
+  skills: false
+  conferences: false
+  talks: false
+  debugoutput: true

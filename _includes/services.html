@@ -6,17 +6,17 @@
         <!-- start .single-product -->
         <div class="product product--card3">
             <div class="product__thumbnail">
-                <img src="{{ service.image | prepend: site.baseurl | prepend: site.url }}" alt="Image">
+                <img src="{{ service.image }}" alt="Image">
             </div>
             <!-- end /.product__thumbnail -->
             <div class="product-desc">
-                <a href="{{site.baseurl}}{{ service.url }}" class="product_title">
+                <a href="{{ service.url }}" class="product_title">
                     <h4>{{ service.title }}</h4>
                 </a>
                 <p>{{ service.content | markdownify | strip_html | truncate: 70 }}</p>
             </div>
             <div class="text-left p-2">
-                <a href="{{site.baseurl}}{{ service.url }}" class="btn btn--default btn--round btn--white">Read more</a>
+                <a href="{{ service.url }}" class="btn btn--default btn--round btn--white">Read more</a>
             </div>
         </div>
         <!-- end /.single-product -->

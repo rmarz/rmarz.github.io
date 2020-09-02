@@ -2,7 +2,7 @@
 layout: landing
 title: Robbie Databee
 ref: index
-lang: de
-permalink: /de/
+lang: en
+permalink: /en/
 ---
 {% include debug.html %}

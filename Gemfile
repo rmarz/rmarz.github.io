@@ -10,9 +10,11 @@ ruby RUBY_VERSION
 
 # If you have any plugins, put them here!
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
 group :jekyll_plugins do
     gem 'jekyll-feed'
     gem 'github-pages'
+    gem 'jekyll-redirect-from'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

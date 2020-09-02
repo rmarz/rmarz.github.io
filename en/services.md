@@ -1,10 +1,15 @@
 ---
 layout: page2
-title:  Our Services
-permalink: /services/
+title: My Services Portfolio
+permalink: /en/services/
 ref: services
 lang: en
-subtitle: Here you can read upon on services
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi rerum soluta in accusantium aperiam reprehenderit vero delectus, fugiat sapiente repudiandae, esse impedit, iusto repellat iure debitis provident. Dolore eaque officiis fugiat illo voluptatum! A excepturi consequatur, officia saepe, aspernatur dolorem dolore vel, corporis vero laboriosam architecto neque sapiente! Nostrum, assumenda.
+subtitle: Purchase these services from me
+description: "As a self-employed professional, I offer various IT services. I adapt entirely to your requirements.
+
+    No matter if it is quick assistance with a technical problem, a one- or multi-day workshop, or a long-term project assignment:
+    
+    You hire me - I deliver."
 ---
+
 {% include services.html %}
