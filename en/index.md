@@ -5,4 +5,3 @@ ref: index
 lang: en
 permalink: /en/
 ---
-{% include debug.html %}
