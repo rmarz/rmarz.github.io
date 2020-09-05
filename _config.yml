@@ -56,21 +56,6 @@ languages: ["en", "de"]
 # Enable or disable the site search
 search_enabled: true
 
-# Social handle for website
-social:
-  twitter:   https://twitter.com/RobbieDatabee
-  linkedin:  https://www.linkedin.com/in/robbiedatabee/
-  xing:      https://www.xing.com/profile/Robert_Marz/cv
-  #pinterest   : https://www.pinterest.com/#/
-  #instagram   : https://www.instagram.com/#/
-  #facebook    : https://facebook.com/#
-  #dribbble:
-  #vine:
-  #flickr:
-  #skype:
-  #tumblr:
-  #youtube:
-
 # Build settings
 permalink: pretty
 kramdown:
