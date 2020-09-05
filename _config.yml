@@ -85,16 +85,22 @@ collections:
     output: true
 
 defaults:
-  - scope:
+  - 
+    scope:
+      path: ""
+    values: 
+        layout: post
+        author: Robert Marz
+  - 
+    scope:
       path: /en/
     values: 
-        layout: post
         lang: en
         base-url: "/en/"
-  - scope:
+  - 
+    scope:
       path: /de/
     values: 
-        layout: post
         lang: de
         base-url: "/de/"
 
