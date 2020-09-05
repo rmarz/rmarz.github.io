@@ -73,7 +73,8 @@ social:
 
 # Build settings
 permalink: pretty
-kramdown: 
+kramdown:
+  html_to_native: true 
   # parse markdown inside block-level HTML tag
   # parse_block_html: true
 
@@ -99,26 +100,19 @@ collections:
     output: true
 
 defaults:
-    -
-     scope:
-         path: ""
-     values:
-         layout: post
-         lang: en
-         base-url: "/en/"
-    -
-     scope:
-         path: de
-     values:
-         lang: de
-         base-url: "/de/"
+  - scope:
+      path: /en/
+    values: 
+        layout: post
+        lang: en
+        base-url: "/en/"
+  - scope:
+      path: /de/
+    values: 
+        layout: post
+        lang: de
+        base-url: "/de/"
 
-
-# Plugins
-plugins_dir:
-  - jekyll-feed
-  - github-pages
-  - jekyll-redirect-from
 whitelist:
   - jekyll-redirect-from
 github: [metadata]
@@ -128,3 +122,13 @@ exclude:
   - "README.md"
 include:
   - "_pages"
+
+plugins_dir:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - github-pages
+
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - github-pages
