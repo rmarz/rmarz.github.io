@@ -10,17 +10,11 @@
                     <!-- start .social -->
                         <div class="social social--color--filled">
                             <ul>
-                                {% for socloc in site.social %}
-                                {% if socloc[1] %}
-                                {% if socloc[0] == 'email' %}
-                                <li><a target="_blank" href="{%
-                                    if socloc[1] contains '@' %}mailto:{{ socloc[1] }}
-                                    {% else %}{{ socloc[1] }}
-                                    {% endif %}" class="fa-envelope"><span class="label">E-mail</span></a></li>
-                                {% else %}
-                                <li><a target="_blank" href="{{ socloc[1] }}"><span class="fa fa-{{ socloc[0] }}"></span></a></li>
-                                {% endif %}
-                                {% endif %}
+                                {% for social in site.data.index.about.social %}
+                                  {% assign url = social[1].url %}
+                                  {% assign icon = social[1].icon %}
+                                  {% assign color = social[1].color %}
+                                  <li><a target="_blank" href="{{ url }}"><span style="font-size: 3em; color: {{ color }}"> <i class="{{ icon }}"></i></span></a></li>
                                 {% endfor %}
                             </ul>
                         </div>

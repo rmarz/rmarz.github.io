@@ -53,3 +53,31 @@ languages:
         image2: "/images/bee.png"
         image2_alt: alt text
 
+# Social handle for website
+social:
+  email:    
+      url: mailto:robert.marz@databee.org
+      icon: fas fa-envelope-square
+      color: "#ffcc00"
+  twitter:  
+      url: https://twitter.com/RobbieDatabee
+      icon: fab fa-twitter-square
+      color: "#00acee"
+  linkedin: 
+      url: https://www.linkedin.com/in/robbiedatabee/
+      icon: fab fa-linkedin
+      color: "#0072b1"
+  xing:     
+      url: https://www.xing.com/profile/Robert_Marz/cv
+      icon: fab fa-xing-square
+      color: "#126567"
+
+  #pinterest   : https://www.pinterest.com/#/
+  #instagram   : https://www.instagram.com/#/
+  #facebook    : https://facebook.com/#
+  #dribbble:
+  #vine:
+  #flickr:
+  #skype:
+  #tumblr:
+  #youtube:
