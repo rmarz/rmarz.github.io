@@ -123,10 +123,7 @@ exclude:
 include:
   - "_pages"
 
-plugins_dir:
-  - jekyll-feed
-  - jekyll-redirect-from
-  - github-pages
+plugins_dir: "_scripts"
 
 plugins:
   - jekyll-feed
