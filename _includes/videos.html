@@ -1,0 +1,30 @@
+{% assign videos = site.data.index.videos %}
+<div class="row">
+    {% for video in videos.videos %}
+    <!-- start .col-md-4 -->
+    <div class="col-lg-4 col-md-6">
+        <!-- start .single-product -->
+        <div class="product product--card">
+            <div>
+                
+                <iframe frameborder="no" 
+                        marginwidth="0" 
+                        marginheight="0" 
+                        width="290" 
+                        height="160"
+                        allowfullscreen 
+                        src="{{ video.url }}">
+                 </iframe>
+                
+            </div>
+            <!-- end /.product__thumbnail -->
+            <div class="product-desc">
+                <p>{{ video.description | markdownify | strip_html }}</p>
+            </div>
+        </div>
+        <!-- end /.single-product -->
+    </div>
+    <!-- end /.col-md-4 -->
+    {% endfor %}
+</div>
+<!-- end .row -->

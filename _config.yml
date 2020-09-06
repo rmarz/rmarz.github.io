@@ -53,6 +53,16 @@ index:
 lang: en
 languages: ["en", "de"]
 
+#Atom Feed
+feed:
+  posts_limit: 100
+  collections:
+    - videos
+    - events
+    - talks
+    - conferences
+
+
 # Enable or disable the site search
 search_enabled: true
 
@@ -82,6 +92,8 @@ collections:
   skills:
     output: true
   conferences:
+    output: true
+  videos:
     output: true
 
 defaults:
