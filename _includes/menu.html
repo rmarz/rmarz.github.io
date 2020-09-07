@@ -14,17 +14,55 @@
             {% endfor %}
           {% endif %}
         {% endfor %}
-        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-        {% for page in pages %}
-        <li>
-            <a href="{{ page.url }}" class="{{ page.lang }}">
-                {% if page.lang == 'en' %}
-                <span class="flag-icon flag-icon-um"></span>
-                {% else %}
-                <span class="flag-icon flag-icon-de"></span>
-                {% endif %}
-            </a>
-        </li>
-        {% endfor %}
+
+        {% if page.lang != null %}
+            <li>
+              <a href="{{ page.url }}" class="{{ page.lang }}">
+                  {% if page.lang == 'en' %}
+                  {% assign otherlang="de" %}
+                  <span class="flag-icon flag-icon-um"></span>
+                  {% else %}
+                  {% assign otherlang="en" %}
+                  <span class="flag-icon flag-icon-de"></span>
+                  {% endif %}
+              </a>
+            </li>
+            {% if page.ref != null %}
+                {% for other in site.pages %}
+                  {%comment%}<li>{{other.ref}}</li>{%endcomment%}
+                  {%if other.ref == page.ref and other.lang == otherlang %}
+                      {% if page.lang != null %}
+                          <li>
+                            <a href="{{ other.url }}" class="{{ other.lang }}">
+                                {% if other.lang == 'en' %}
+                                <span class="flag-icon flag-icon-um"></span>
+                                {% else %}
+                                <span class="flag-icon flag-icon-de"></span>
+                                {% endif %}
+                            </a>
+                          </li>
+                      {% endif %}
+                  {% endif %}  
+                {% endfor %}
+            {% endif %}  
+        {% endif %}
+        {% comment %}
+        {% if page.ref != null %}
+        <li>lang: {{ page.lang }}</li>
+          {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+          {% for page in pages %}
+          <li>X: {{page.lang}} {{page.ref}} {{page.name}}</li>
+          <li>
+              <a href="{{ page.url }}" class="{{ page.lang }}">
+                  {% if page.lang == 'en' %}
+                  <span class="flag-icon flag-icon-um"></span>
+                  {% else %}
+                  <span class="flag-icon flag-icon-de"></span>
+                  {% endif %}
+              </a>
+          </li>
+          {% endfor %}
+        {% endif %}
+        {% endcomment %}  
     </ul>
 </div>

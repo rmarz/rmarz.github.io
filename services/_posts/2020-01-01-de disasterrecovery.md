@@ -2,7 +2,8 @@
 layout: detail
 title: Disaster Recovery
 image: /images/services/disaster-recovery-01.jpeg
-ref: services.03.disaster
+ref: service_03_disaster
+permalink: /de/Dienstleistungen/devops_automatisierung.html
 lang: de
 ---
 

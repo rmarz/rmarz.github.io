@@ -2,7 +2,7 @@
 layout: detail
 title: "Software Architektur"
 image: "/images/services/architecture-01.jpeg"
-ref: services.02.architecture
+ref: service_02_architecture
 lang: de
 ---
 

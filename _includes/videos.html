@@ -1,0 +1,35 @@
+<div class="row">
+    {% for video in site.posts %}
+        {% if video.categories[0] == "videos" %}
+                <!-- start .col-md-4 -->
+                <div class="col-lg-4 col-md-6">
+                    <!-- start .single-product -->
+                    <div class="product product--card">
+                        <div>
+                            
+                            <iframe frameborder="no" 
+                                    marginwidth="0" 
+                                    marginheight="0" 
+                                    width="290" 
+                                    height="160"
+                                    allowfullscreen 
+                                    src="{{ video.vidurl }}">
+                            </iframe>
+                            
+                        </div>
+                        <!-- end /.product__thumbnail -->
+                        <div class="product-desc">
+                            <a href="{{ video.url }}" class="product_title">
+                                <h3>{{ video.title }} </h3>
+                                <br>
+                                <p>{{ video.subtitle }}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end /.single-product -->
+                </div>
+                <!-- end /.col-md-4 -->
+            {% endif %}
+    {% endfor %}
+</div>
+<!-- end .row -->

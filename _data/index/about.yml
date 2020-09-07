@@ -71,6 +71,10 @@ social:
       url: https://www.xing.com/profile/Robert_Marz/cv
       icon: fab fa-xing-square
       color: "#126567"
+  youtube:
+    url: https://www.youtube.com/channel/UCp0-39TuBom8xNpbIB4q7Ww
+    icon: fab fa-youtube
+    color: red
 
   #pinterest   : https://www.pinterest.com/#/
   #instagram   : https://www.instagram.com/#/
@@ -80,4 +84,3 @@ social:
   #flickr:
   #skype:
   #tumblr:
-  #youtube:

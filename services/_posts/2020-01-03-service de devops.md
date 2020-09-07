@@ -2,7 +2,7 @@
 layout: detail
 title: Automatisierung und DevOps
 image: /images/services/devops-01.jpeg
-ref: service.01.devops
+ref: service_01_devops
 lang: de
 ---
 
