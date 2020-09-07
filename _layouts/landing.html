@@ -287,14 +287,14 @@ layout: default
             {% for service in services %}
             <div class="col-lg-4">
                 <div class="feature">
-                    <div class="feature__img">
-                        <img src="{{ service.image }}" alt="">
-                    </div>
-                    <div class="feature__title">
-                        <a href="{{ service.url }}">
-                            <h3>{{ service.title }}</h3>
-                        </a>
-                    </div>
+                    <a href="{{ service.url }}">
+                        <div class="feature__img">
+                            <img src="{{ service.image }}" alt="">
+                        </div>
+                        <div class="feature__title">
+                                <h3>{{ service.title }}</h3>
+                        </div>
+                    </a>
                     <div class="feature__desc">
                         <p>{{ service.content | markdownify | strip_html | truncate: 140 }}</p>
                     </div>

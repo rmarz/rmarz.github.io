@@ -56,12 +56,7 @@ languages: ["en", "de"]
 #Atom Feed
 feed:
   posts_limit: 100
-  collections:
-    - videos
-    - events
-    - talks
-    - conferences
-
+   
 
 # Enable or disable the site search
 search_enabled: true
@@ -83,8 +78,6 @@ collections:
   talks:
     output: true
     permalink: /:collection/:title
-  services:
-    output: true
   publications:
     output: true
   events:
@@ -93,16 +86,13 @@ collections:
     output: true
   conferences:
     output: true
-  videos:
-    output: true
 
 defaults:
   - 
     scope:
-      path: ""
+      path: "/videos/*"
     values: 
-        layout: post
-        author: Robert Marz
+      layout: detail-video
   - 
     scope:
       path: /en/
@@ -113,8 +103,13 @@ defaults:
     scope:
       path: /de/
     values: 
-        lang: de
-        base-url: "/de/"
+      lang: de
+      base-url: "/de/"
+  - 
+    scope:
+      path: ""
+    values: 
+      author: Robert Marz
 
 whitelist:
   - jekyll-redirect-from
