@@ -15,6 +15,11 @@ layout: default
                         </div>
                         <div class="single_blog_content">
                             {{ content }}
+                            {% comment %}
+
+                              <p><br><br><br></p>    
+                              page inspect: {{ page | inspect }}
+                            {% endcomment %}
                         </div>
                     </article>
                 </div>
