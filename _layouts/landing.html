@@ -281,26 +281,27 @@ layout: default
             </div>
             <!-- end /.col-md-12 -->
         </div>
-        {% assign services = site.services | where:"lang", page.lang %}
         <!-- start row -->
         <div class="row">
-            {% for service in services %}
-            <div class="col-lg-4">
-                <div class="feature">
-                    <a href="{{ service.url }}">
-                        <div class="feature__img">
-                            <img src="{{ service.image }}" alt="">
+            {% for service in site.posts %}
+                {% if service.lang == page.lang and service.categories[0] == "services" %}
+                    <div class="col-lg-4">
+                        <div class="feature">
+                            <a href="{{ service.url }}">
+                                <div class="feature__img">
+                                    <img src="{{ service.image }}" alt="">
+                                </div>
+                                <div class="feature__title">
+                                        <h3>{{ service.title }}</h3>
+                                </div>
+                            </a>
+                            <div class="feature__desc">
+                                <p>{{ service.content | markdownify | strip_html | truncate: 140 }}</p>
+                            </div>
                         </div>
-                        <div class="feature__title">
-                                <h3>{{ service.title }}</h3>
-                        </div>
-                    </a>
-                    <div class="feature__desc">
-                        <p>{{ service.content | markdownify | strip_html | truncate: 140 }}</p>
+                    <!-- end /.feature -->
                     </div>
-                </div>
-                <!-- end /.feature -->
-            </div>
+                {% endif %}
             {% endfor %}
             <!-- end /.col-md-4 -->
         </div>
