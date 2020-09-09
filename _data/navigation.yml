@@ -19,8 +19,8 @@ languages:
       url: /en/videos/
 #    - title: "Meet & Greet"
 #      url: /en/conferences/
-#    - title: "Talks"
-#      url: /en/talks/
+    - title: "Talks"
+      url: /en/talks/
   - language: "de"
     links:
     - title: "Home"
@@ -37,8 +37,8 @@ languages:
       url: /de/videos/
 #    - title: "Triff mich"
 #      url: /de/konferenzen/
-#    - title: "Vorträge"
-#      url: /de/talks/
+    - title: "Vorträge"
+      url: /de/talks/
 show:
   publications: false
   services: true

@@ -95,6 +95,11 @@ defaults:
       layout: detail-video
   - 
     scope:
+      path: "/talks/*"
+    values: 
+      lang: en
+  - 
+    scope:
       path: /en/
     values: 
         lang: en
