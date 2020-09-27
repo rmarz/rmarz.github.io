@@ -1,7 +1,7 @@
 ---
 title: "APEX connect 2020 [online]"
 subtitle: "Polymorphic Table Functions und Qualified Expressions"
-vidurl: "https://www.youtube.com/watch?v=Uwiu-HkyVFI"
+vidurl: "https://www.youtube.com/embed/Uwiu-HkyVFI"
 orgurl: https://apex.doag.org
 orgdesc: "DOAG APEX connect 2020 [online]"
 lang: de
