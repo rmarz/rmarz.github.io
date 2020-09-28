@@ -1,0 +1,124 @@
+'2018':
+- DOAG 2018 Conference + Exhibition:
+    org: DOAG
+    type: Conference Session
+- DOAG 2018 Database:
+    org: DOAG
+    type: Conference Session
+- DOAG DevOps Day 2018:
+    org: DOAG
+    type: Conference Session
+- 'DOAG Noon2Noon 2018: Apex For DBAs':
+    org: DOAG
+    type: Conference Session
+- "DOAG Regio Nürnberg/Franken":
+    org: DOAG
+    type: Conference Session
+- IOUG Collaborate 18:
+    org: DOAG
+    type: Conference Session
+- IT Tage Frankfurt:
+    org: DOAG
+    type: Conference Session
+- ODTUG KScope18:
+    org: DOAG
+    type: Conference Session
+- OUGN Spring Seminar 2018:
+    org: DOAG
+    type: Conference Session
+- "SOUG Day September 2018, Baden Dätwill":
+    org: DOAG
+    type: Conference Session
+- 2018 CodeTalk Series:
+    org: DOAG
+    type: Webinar Session
+- nlOUG Tech Experience 2018:
+    org: DOAG
+    type: Conference Session
+'2019':
+- DOAG 2019 Conference + Exhibition:
+    org: DOAG
+    type: Conference Session
+- DOAG 2019 Database:
+    org: DOAG
+    type: Conference Session
+- DOAG APEX Connect 2019:
+    org: DOAG
+    type: Conference Session
+- 'DOAG Noon2Noon 2019: Oracle Databases in the Cloud':
+    org: DOAG
+    type: Conference Session
+- "DOAG Regio München":
+    org: DOAG
+    type: Conference Session
+- GoDevOps (doag SIG event):
+    org: DOAG
+    type: Conference Session
+- IOUG Collaborate 19:
+    org: DOAG
+    type: Conference Session
+- IT Tage 2019:
+    org: DOAG
+    type: Conference Session
+- ODTUG Kscope 19:
+    org: DOAG
+    type: Conference Session
+- OUGN 2019 Spring Conference:
+    org: DOAG
+    type: Conference Session
+- Oracle Code One 2019:
+    org: DOAG
+    type: Conference Session
+- RMOUG Training Days 2019:
+    org: DOAG
+    type: Conference Session
+'2020':
+- ACEs@home - Episode 3:
+    org: DOAG
+    type: Webinar Session
+- APEX Connect Online 2020:
+    org: DOAG
+    type: Webinar Session
+- Collaborate 2020:
+    org: DOAG
+    type: Conference Session
+    canceled: Canceled due to COVID-19 Pandemic
+- DOAG APEX Connect 2020:
+    org: DOAG
+    type: Conference Session
+    canceled: Canceled due to COVID-19 Pandemic
+- DOAG Database Conference 2020 (virtual conference):
+    org: DOAG
+- DOAG Datenbank 2020:
+    org: DOAG
+    type: Conference Session
+    canceled: Canceled due to COVID-19 Pandemic
+- DOUG Training Day 2020:
+    org: DOAG
+    type: Webinar Session
+- First LuxOUG Virtual Tech Days 2020:
+    org: DOAG
+    type: Webinar Session
+- ODTUG - Learn from Home Series:
+    org: DOAG
+    type: Webinar Session
+- OUG Ireland 2020:
+    org: DOAG
+    type: Conference Session
+    canceled: Canceled due to COVID-19 Pandemic
+- Oracle Groundbreakers APAC Virtual Tour 2020:
+    org: DOAG
+    type: Webinar Session
+- Oracle Groundbreakers EMEA Virtual Tour:
+    org: DOAG
+    type: Webinar Session
+- Quest Forum Digital Event:
+    org: DOAG
+    type: Webinar Session
+- RMOUG Training Days 2020:
+    org: DOAG
+    type: Conference Session
+'2021':
+- DOAG Development Online-Event:
+    org: DOAG
+    type: Webinar Session
