@@ -42,5 +42,5 @@ languages:
 show:
   videos: true
   services: true
-  skills: true
+  skills: false
   debugoutput: false
