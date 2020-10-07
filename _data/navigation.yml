@@ -40,7 +40,7 @@ languages:
     - title: "Vorträge"
       url: /de/talks/
 show:
-  publications: true
+  publications: false
   services: true
-  skills: true
+  skills: false
   debugoutput: false
