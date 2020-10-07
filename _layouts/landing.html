@@ -109,6 +109,97 @@ layout: default
 <!--================================
         END OVERVIEW AREA
     =================================-->
+
+
+
+    {% if site.data.navigation.show.services %}
+    <!--================================
+            START FEATURE AREA
+    =================================-->
+    <section class="features section--padding">
+        {% assign item = site.pages | where: "ref" , 'services' | where: "lang" , page.lang | first %}
+        <!-- start container -->
+        <div class="container">
+            <div class="row">
+                <!-- start col-md-12 -->
+                <div class="col-md-12">
+                    <div class="section-title">
+                         <a href="{{ item.permalink }}"><h1>{{ item.title }}</h1></a>
+                         <h3>{{ item.subtitle }}</h3>
+                         <br>
+                         <p>{{ item.description|newline_to_br }}</p>
+                    </div>
+                </div>
+                <!-- end /.col-md-12 -->
+            </div>
+            <!-- start row -->
+            <div class="row">
+                {% for service in site.posts %}
+                    {% if service.lang == page.lang and service.categories[0] == "services" %}
+                        <div class="col-lg-4">
+                            <div class="feature">
+                                <a href="{{ service.url }}">
+                                    <div class="feature__img">
+                                        <img src="{{ service.image }}" alt="">
+                                    </div>
+                                    <div class="feature__title">
+                                            <h3>{{ service.title }}</h3>
+                                    </div>
+                                </a>
+                                <div class="feature__desc">
+                                    <p>{{ service.content | markdownify | strip_html | truncate: 140 }}</p>
+                                </div>
+                            </div>
+                        <!-- end /.feature -->
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                <!-- end /.col-md-4 -->
+            </div>
+            <!-- end /.row -->
+        </div>
+        <!-- end /.container -->
+    </section>
+    <!--================================
+            END FEATURE AREA
+        =================================-->
+    {% endif %}
+
+
+
+{% if site.data.navigation.show.talks %}
+    <!--================================
+        START CALL TO ACTION AREA
+    =================================-->
+<section class="call-to-action bgimage">
+    {% assign item = site.pages | where: "ref" , "talks" | where: "lang" , page.lang | first %}
+    <div class="bg_image_holder">
+        <img src="/images/2019-07-Seattle.jpg"  alt="">
+    </div>
+    <div class="container content_above">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="call-to-wrap">
+                    <h1 class="text--white">{{ item.title }} </h1>
+                    <h4 class="text--white">{{ item.subtitle }}</h4>
+                    {% capture removestr %}include talks.html{% endcapture %}
+                    {% capture removelen %} {{ removestr.size| plus: 6 }} {% endcapture %}
+                    {% capture content_shortlen %}{{ item.content.size |minus: removelen }} {% endcapture %}
+
+                    <h4 class="text--white">{{ item.content|truncate: content_shortlen}}</h4>
+
+                    <a href="{{ item.url }}" class="btn btn--round btn--lg btn--white callto-action-btn">{{ item.button_text }}</a>
+                    <
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================================
+        END CALL TO ACTION AREA
+=================================-->
+{% endif %}
+
 {% if site.data.navigation.show.videos %}
 <!--================================
         START FEATURE AREA
@@ -123,9 +214,11 @@ layout: default
                 <div class="col-md-12">
                     <div class="section-title">
                          <a href="{{ item.permalink }}"><h1>{{ item.title }}</h1>
-                         <h3>{{ item.subtitle }}</h3>
-                         <br>
-                         <p>{{ item.description|newline_to_br }}</p></a>
+                            <h3>{{ item.subtitle }}</h3>
+                            <br>
+                            <p>{{ item.description|markdownify }}</p>
+                            <p>{{ item.landing_text|markdownify }}</p>
+                         </a>
                     </div>
                 </div>
                 <!-- end /.col-md-12 -->
@@ -133,23 +226,21 @@ layout: default
 
         <!-- start row -->
         <div class="row">
-            {% assign videos = site.posts | where: categories[0],"videos" %}
+            {% assign videos = site.posts | where: "categories","videos" %}
             {% for video in videos limit:3 %}
                 <div class="col-lg-4">
                     <div class="feature">
-                        <div class="product product--card">
-                            <div>
+                        <div>
 
-                                <iframe frameborder="no"
-                                        marginwidth="0"
-                                        marginheight="0"
-                                        width="290"
-                                        height="160"
-                                        allowfullscreen
-                                        src="{{ video.vidurl }}">
-                                </iframe>
-
-                            </div>
+                            <iframe frameborder="no"
+                                    marginwidth="0"
+                                    marginheight="0"
+                                    width="290"
+                                    height="160"
+                                    allowfullscreen
+                                    src="{{ video.vidurl }}">
+                            </iframe>
+                        </div>
                             <!-- end /.product__thumbnail -->
                             <div class="product-desc">
                                 <a href="{{ video.url }}" class="product_title">
@@ -157,97 +248,13 @@ layout: default
                                     <br>
                                     <p>{{ video.subtitle }}</p>
                                 </a>
+
                             </div>
                     </div>
                 <!-- end /.feature -->
                 </div>
         {% endfor %}
 
-            <!-- end /.col-md-4 -->
-        </div>
-        <!-- end /.row -->
-    </div>
-    <!-- end /.container -->
-</section>
-<!--================================
-        END FEATURE AREA
-    =================================-->
-{% endif %}
-
-
-{% if site.data.navigation.show.skills %}
-    <!--================================
-        START CALL TO ACTION AREA
-    =================================-->
-<section class="call-to-action bgimage">
-    {% for item in site.data.index.skills.languages %}
-    {% if item.language == page.lang %}
-    {% for it in item.skills %}
-    <div class="bg_image_holder">
-        <img src="{{ "/images/2019-07-Seattle.jpg" | prepend: site.baseurl | prepend: site.url }}" alt="">
-    </div>
-    <div class="container content_above">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="call-to-wrap">
-                    <h1 class="text--white">{{ it.heading }}</h1>
-                    <h4 class="text--white">{{ it.subheading }}</h4>
-                    <a href="{{site.baseurl}}{{ it.buttonlink1 }}" class="btn btn--round btn--lg btn--white callto-action-btn">{{ it.buttontext1 }}</a>
-                    <a href="{{site.baseurl}}{{ it.buttonlink2 }}" class="btn btn--round btn--lg btn--white callto-action-btn">{{ it.buttontext2 }}</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
-    {% endif %}
-    {% endfor %}
-</section>
-<!--================================
-        END CALL TO ACTION AREA
-=================================-->
-{% endif %}
-{% if site.data.navigation.show.services %}
-<!--================================
-        START FEATURE AREA
-=================================-->
-<section class="features section--padding">
-    {% assign item = site.pages | where: "ref" , 'services' | where: "lang" , page.lang | first %}
-    <!-- start container -->
-    <div class="container">
-        <div class="row">
-            <!-- start col-md-12 -->
-            <div class="col-md-12">
-                <div class="section-title">
-                     <a href="{{ item.permalink }}"><h1>{{ item.title }}</h1></a>
-                     <h3>{{ item.subtitle }}</h3>
-                     <br>
-                     <p>{{ item.description|newline_to_br }}</p>
-                </div>
-            </div>
-            <!-- end /.col-md-12 -->
-        </div>
-        <!-- start row -->
-        <div class="row">
-            {% for service in site.posts %}
-                {% if service.lang == page.lang and service.categories[0] == "services" %}
-                    <div class="col-lg-4">
-                        <div class="feature">
-                            <a href="{{ service.url }}">
-                                <div class="feature__img">
-                                    <img src="{{ service.image }}" alt="">
-                                </div>
-                                <div class="feature__title">
-                                        <h3>{{ service.title }}</h3>
-                                </div>
-                            </a>
-                            <div class="feature__desc">
-                                <p>{{ service.content | markdownify | strip_html | truncate: 140 }}</p>
-                            </div>
-                        </div>
-                    <!-- end /.feature -->
-                    </div>
-                {% endif %}
-            {% endfor %}
             <!-- end /.col-md-4 -->
         </div>
         <!-- end /.row -->
