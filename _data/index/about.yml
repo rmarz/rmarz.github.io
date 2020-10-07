@@ -2,70 +2,57 @@
 # Be aware that even a small syntax error here can lead to failures in output.
 #
 # Home Page About
-languages:
+logos:
+  - image:       /images/Logo_Databee.png
+    description: Databee Logo
+  - image:       /images/Oracle_ACE Program_ACE_rgb.png
+    description: Oracle ACE Program Logo
+  - image:       /images/Logo_Databees.png
+    description: Databees Logo
+portrait:
+  - image:       /images/Robert-Marz.jpeg
+    description: Robert Marz
+text:
   - language: "en"
-    about:
-      - heading: About Robert Marz, Independent Consultant, IT-Architect, Oracle ACE
-        subheading: Everything you need to know about me.
-        image: "/images/Robert-Marz.jpeg"
-        image_alt: Robert Marz
-        text: |
-          Robert Marz is a Germany based Independent Consultant.
-
-          At customer sites, he works as a Senior Technical Architect with a database-centric view of the world.
-
-          Robert loves to share his knowledge and is very active in the Oracle community. He is a member of the Oracle User Groups DOAG, ODTUG, Quest (ex IOUG), and RMOUG.
-
-          At DOAG (the German Oracle user group), he is in charge of the Cloud topics inside the database community.
-
-          Oracle recognized his community contributions and awarded him the Oracle ACE status in 2015. The status has been renewed yearly ever since.
-
-          More than twenty years of experience in custom development and data warehouse projects makes him a specialist in Oracle database development and administration.
-
-          Additionally, he is skilled in the fields of scripting languages, operating systems, virtualization and cloud technologies.
-
-          Robert Marz publishes articles and papers in various publications and frequently speaks at German and international conferences.
-        image1: "/images/Logo_Databee.png"
-        image1_alt: Databee Logo
-        image2: "/images/Oracle_ACE Program_ACE_rgb.png"
-        image2_alt: Oracle ACE Program Logo
-        image3: "/images/Logo_Databees.png"
-        image3_alt: Databees Logo
-
+    heading: About Robert Marz, Independent Consultant, IT-Architect, Oracle ACE
+    subheading: Everything you need to know about me.
+    text: |
+        Robert Marz is a Germany based Independent Consultant.
+        At customer sites, he works as a Senior Technical Architect with a database-centric view of the world.
+        Robert loves to share his knowledge and is very active in the Oracle community. He is a member of the Oracle User Groups DOAG, ODTUG, Quest (ex IOUG), and RMOUG.
+        At DOAG (the German Oracle user group), he is in charge of the Cloud topics inside the database community.
+        Oracle recognized his community contributions and awarded him the Oracle ACE status in 2015. The status has been renewed yearly ever since.
+        More than twenty years of experience in custom development and data warehouse projects makes him a specialist in Oracle database development and administration.
+        Additionally, he is skilled in the fields of scripting languages, operating systems, virtualization and cloud technologies.
+        Robert Marz publishes articles and papers in various publications and frequently speaks at German and international conferences.
   - language: "de"
-    about:
-      - heading: Über Robert Marz, Freiberuflicher Berater, IT-Architect, Oracle ACE
-        subheading: Alles was Sie über mich wissen müssen.
-        image: "/images/Robert-Marz.jpeg"
-        image_alt: Robert Marz
-        text: |
-          Robert Marz ist ein selbständiger IT-Berater aus Frankfurt am Main, Deutschland.
+    heading: Über Robert Marz, Freiberuflicher Berater, IT-Architect, Oracle ACE
+    subheading: Alles was Sie über mich wissen müssen.
+    text: |
+        Robert Marz ist ein selbständiger IT-Berater aus Frankfurt am Main, Deutschland.
 
-          Bei seinen Kunden füllt er in der Regel die Rolle des Senior Technical Architect mit einem datenbankzentrischen Weltbild aus.
-          Er teilt sein Wissen gerne und ist sehr aktiv innerhalb der Oracle Community. Er ist Mitglied der Oracle User Gruppen DOAG, ODTUG, Quest (ex IOUG) und RMOUG.
+        Bei seinen Kunden füllt er in der Regel die Rolle des Senior Technical Architect mit einem datenbankzentrischen Weltbild aus.
+        Er teilt sein Wissen gerne und ist sehr aktiv innerhalb der Oracle Community. Er ist Mitglied der Oracle User Gruppen DOAG, ODTUG, Quest (ex IOUG) und RMOUG.
 
-          Robert ist aktives Mitglied der DOAG und hat die die Themenverantwortung für den Cloud-Bereich der Datenbank Community inne.
+        Robert ist aktives Mitglied der DOAG und hat die die Themenverantwortung für den Cloud-Bereich der Datenbank Community inne.
 
-          Oracle hat seine Beiträge zur Community anerkannt und ihm im Jahr 2015 den Oracle ACE Status verliehen. Der Status wurde seitdem jedes Jahr erneuert.
+        Oracle hat seine Beiträge zur Community anerkannt und ihm im Jahr 2015 den Oracle ACE Status verliehen. Der Status wurde seitdem jedes Jahr erneuert.
 
-          Mehr als zwanzig Jahre Erfahrung in Custom Development und Datawarehouse Projekten haben ihn zu einem Spezialisten für Anwendungsentwicklung und Administration der Oracle Datenbank geformt. Zusätzlich ist er erfahren im Bereich von Scriptsprachen, Betriebssystemen, Virtualisierung und Cloudtechnologien.
+        Mehr als zwanzig Jahre Erfahrung in Custom Development und Datawarehouse Projekten haben ihn zu einem Spezialisten für Anwendungsentwicklung und Administration der Oracle Datenbank geformt. Zusätzlich ist er erfahren im Bereich von Scriptsprachen, Betriebssystemen, Virtualisierung und Cloudtechnologien.
 
-          Robert veröffentlicht Artikel und Papers in verschieden Publikationen und tritt regelmäßig als Sprecher auf deutschen und internationalen Konferenzen in Erscheinung.
-        image1: "/images/O_ACELogo_clr.jpg"
-        image1_alt: Oracle ACE Program Logo
-        image2: "/images/bee.png"
-        image2_alt: alt text
-
+        Robert veröffentlicht Artikel und Papers in verschieden Publikationen und tritt regelmäßig als Sprecher auf deutschen und internationalen Konferenzen in Erscheinung.
 # Social handle for website
 social:
   email:
       url: mailto:robert.marz@databee.org
       icon: fas fa-envelope-square
       color: "#ffcc00"
+      name: Robert.Marz@databee.org
   twitter:
       url: https://twitter.com/RobbieDatabee
       icon: fab fa-twitter-square
       color: "#00acee"
+      name: "@RobbieDatabee"
   linkedin:
       url: https://www.linkedin.com/in/robbiedatabee/
       icon: fab fa-linkedin

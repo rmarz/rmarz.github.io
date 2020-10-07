@@ -55,9 +55,8 @@ layout: default
         START OVERVIEW AREA
     =================================-->
 <section class="overview-area section--padding" id="about-me">
-    {% for item in site.data.index.about.languages %}
-    {% if item.language == page.lang %}
-    {% for it in item.about %}
+    {% for text in site.data.index.about.text %}
+       {% if text.language == page.lang %}
     <!-- start container -->
     <div class="container">
         <!-- start row -->
@@ -65,8 +64,8 @@ layout: default
             <!-- start col-md-12 -->
             <div class="col-md-12">
                 <div class="section-title">
-                    <h1>{{ it.heading }}</h1>
-                    <p>{{ it.subheading }}</p>
+                    <h1>{{ text.heading }}</h1>
+                    <p>{{ text.subheading }}</p>
                 </div>
             </div>
             <!-- end /.col-md-12 -->
@@ -75,42 +74,37 @@ layout: default
         <div class="row">
             <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
                 <div class="overview-icon">
-                    <img src="{{ it.image }}" alt="{{ it.image_alt }}">
+                    <img src="{{ site.data.index.about.portrait[0].image }}" alt="{{ site.data.index.about.portrait[0].description }}">
                     <span>
-                        <a href="mailto:Robert.Marz@databee.org">
-                            <span class="lnr lnr-envelope info-icon"></span> Robert.Marz@databee.org </a>
+                        <a href="{{ site.data.index.about.social.email.url }}">
+                            <span class="lnr lnr-envelope info-icon"></span> {{ site.data.index.about.social.email.name }} </a>
                     </span>
                     <p>
-                        <a href="https://twitter.com/RobbieDatabee" target="_blank">
-                            <span class="fab fa-twitter"></span> @RobbieDatabee
+                        <a href="{{ site.data.index.about.social.twitter.url }}" target="_blank">
+                            <span class="fab fa-twitter"></span> {{ site.data.index.about.social.twitter.name }}
                         </a>
                     </p>
                 </div>
             </div>
             <!-- end /.col-md-4 -->
             <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
-                {{ it.text | markdownify }}
+                {{ text.text | markdownify }}
             </div>
             <!-- end /.col-md-5 -->
         </div>
         <!-- end /.row -->
+        {% endif %}
+    {% endfor %}
         <div class="row m-5">
+            {% for logo in site.data.index.about.logos %}
             <div class="col-md-4 v_middle">
-                <img src="{{ it.image1 }}" alt="it.image1_alt" class="img-fluid">
+                <img src="{{ logo.image }}" alt="logo.description" class="img-fluid">
             </div>
-            <div class="col-md-4 v_middle">
-                <img src="{{ it.image2 }}" alt="it.image2_alt" class="img-fluid">
-            </div>
-            <div class="col-md-4 v_middle">
-                <img src="{{ it.image3 }}" alt="it.image3_alt" class="img-fluid">
-            </div>
+            {% endfor %}
         </div>
         <!-- end /.row -->
     </div>
     <!-- end /.container -->
-    {% endfor %}
-    {% endif %}
-    {% endfor %}
 </section>
 <!--================================
         END OVERVIEW AREA
