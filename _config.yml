@@ -4,7 +4,7 @@ title:
   de: "Robert Marz, Databee - Die IT-Architekten"
 email: robert.marz@databee.org
 mobile: "+49 (172) 139 1530"
-favicon: /images/bee.png
+favicon: /images/Wolke.png
 logo:
 footer_logo:
 description:
@@ -20,26 +20,26 @@ copyright:
   en: "&copy; 2020 <a href='http://www.databee.org'>Databee - Die IT-Architekten</a>. All rights reserved."
   de: "&copy; 2020 <a href='http://www.databee.org'>Databee - Die IT-Architekten</a>. All rights reserved."
 imprint:
-  en: 
+  en:
     title: "Imprint - Site Notice"
     url: "/en/imprint/"
-  de: 
+  de:
     title: "Impressum"
     url: "/de/impressum/"
 dsgvo:
-  en: 
+  en:
     title: "GDPR Information - (German only)"
     url: "/en/gdpr/"
-  de: 
+  de:
     title: "Datenschutzerklärung"
     url: "/de/dsgvo/"
 contact:
-  en: 
+  en:
     title: "Contact me"
     url: "/en/contact/"
-  de: 
+  de:
     title: "Kontaktieren Sie mich"
-    url: "/de/kontakt/"    
+    url: "/de/kontakt/"
 url: "https://robbie.databee.org" # the base hostname & protocol for this site
 baseurl: "/" # the subpath of your site, e.g. /blog
             # Note you'll have to move your robots.txt to the root if you want it used.
@@ -56,7 +56,7 @@ languages: ["en", "de"]
 #Atom Feed
 feed:
   posts_limit: 100
-   
+
 
 # Enable or disable the site search
 search_enabled: true
@@ -64,7 +64,7 @@ search_enabled: true
 # Build settings
 permalink: pretty
 kramdown:
-  html_to_native: true 
+  html_to_native: true
   # parse markdown inside block-level HTML tag
   # parse_block_html: true
 
@@ -88,32 +88,32 @@ collections:
     output: true
 
 defaults:
-  - 
+  -
     scope:
       path: "/videos/*"
-    values: 
+    values:
       layout: detail-video
-  - 
+  -
     scope:
       path: "/talks/*"
-    values: 
+    values:
       lang: en
-  - 
+  -
     scope:
       path: /en/
-    values: 
+    values:
         lang: en
         base-url: "/en/"
-  - 
+  -
     scope:
       path: /de/
-    values: 
+    values:
       lang: de
       base-url: "/de/"
-  - 
+  -
     scope:
       path: ""
-    values: 
+    values:
       author: Robert Marz
 
 whitelist:
