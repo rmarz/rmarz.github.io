@@ -1,7 +1,7 @@
 ---
 layout: simple
-title: Zeichensatz und Spracheeinstellungen bei SQLcl
-ref: blogSqlclCharset
+title: Zeichensatz und Spracheinstellungen bei SQLcl
+ref: blog-2016-09-02-SQLcl_Charset
 date: 2016-09-02
 lang: de
 permalink: /de/blog/sqlcl-charset/

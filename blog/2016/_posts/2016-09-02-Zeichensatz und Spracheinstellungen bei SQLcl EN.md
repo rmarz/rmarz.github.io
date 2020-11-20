@@ -1,7 +1,7 @@
 ---
 layout: simple
 title: Characterset and Locale Settings for SQLcl
-ref: blogSqlclCharset
+ref: blog-2016-09-02-SQLcl_Charset
 date: 2016-09-02
 lang: en
 permalink: /en/blog/sqlcl-charset/
