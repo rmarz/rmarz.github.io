@@ -42,9 +42,27 @@
                             </a>
                           </li>
                       {% endif %}
-                  {% endif %}  
+                  {% endif %}
                 {% endfor %}
-            {% endif %}  
+            {% endif %}
+            {% if page.lang != null %}
+                {% for other in site.posts %}
+                  {%comment%}<li>{{other.ref}}</li>{%endcomment%}
+                  {%if other.ref == page.ref and other.lang == otherlang %}
+                      {% if page.lang != null %}
+                          <li>
+                            <a href="{{ other.url }}" class="{{ other.lang }}">
+                                {% if other.lang == 'en' %}
+                                <span class="flag-icon flag-icon-um"></span>
+                                {% else %}
+                                <span class="flag-icon flag-icon-de"></span>
+                                {% endif %}
+                            </a>
+                          </li>
+                      {% endif %}
+                  {% endif %}
+                {% endfor %}
+            {% endif %}
         {% endif %}
         {% comment %}
         {% if page.ref != null %}
@@ -63,6 +81,6 @@
           </li>
           {% endfor %}
         {% endif %}
-        {% endcomment %}  
+        {% endcomment %}
     </ul>
 </div>
