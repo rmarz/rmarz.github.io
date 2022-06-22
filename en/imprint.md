@@ -21,7 +21,8 @@ E-Mail: robert.marz@databee.org
 
 ## Image rights
 
-- ©Robert Marz
 - /images/services/architecture-01.jpeg: ©Olivier Le Moal - stock.adobe.com
 - /images/services/devops-01.jpeg: ©Asha Sreenivas - stock.adobe.com
 - /images/services/disaster-recovery-01.jpeg: ©manusapon - stock.adobe.com
+- /images/ressources.jpeg: ©Romolo Tavani - stock.adobe.com
+- All others: ©Robert Marz

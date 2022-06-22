@@ -33,15 +33,17 @@ Im Brombeerfeld 26
 
 ## Bildrechte:
 
-- ©Robert Marz
 - /images/services/architecture-01.jpeg: ©Olivier Le Moal - stock.adobe.com
 - /images/services/devops-01.jpeg: ©Asha Sreenivas - stock.adobe.com
 - /images/services/disaster-recovery-01.jpeg: ©manusapon - stock.adobe.com
+- /images/ressources.jpeg: ©Romolo Tavani - stock.adobe.com
+- Alle anderen: ©Robert Marz
 
-# Disclaimer – rechtliche Hinweise
+   
+## Disclaimer – rechtliche Hinweise
 
 
-## § 1 Warnhinweis zu Inhalten
+### § 1 Warnhinweis zu Inhalten
 
 Die kostenlosen und frei zugänglichen Inhalte dieser Webseite wurden mit größtmöglicher Sorgfalt erstellt.
 Der Anbieter dieser Webseite übernimmt jedoch keine Gewähr für die Richtigkeit und Aktualität der
@@ -51,7 +53,7 @@ Anbieters wieder. Allein durch den Aufruf der kostenlosen und frei zugänglichen
 Vertragsverhältnis zwischen dem Nutzer und dem Anbieter zustande, insoweit fehlt es am
 Rechtsbindungswillen des Anbieters.
 
-## § 2 Externe Links
+### § 2 Externe Links
 
 Diese Website enthält Verknüpfungen zu Websites Dritter ("externe Links"). Diese Websites unterliegen der
 Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die
@@ -62,7 +64,7 @@ Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht. Eine
 externen Links ist für den Anbieter ohne konkrete Hinweise auf Rechtsverstöße nicht zumutbar. Bei
 Kenntnis von Rechtsverstößen werden jedoch derartige externe Links unverzüglich gelöscht.
 
-## § 3 Urheber- und Leistungsschutzrechte
+### § 3 Urheber- und Leistungsschutzrechte
 
 Die auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheber- und
 Leistungsschutzrecht. Jede vom deutschen Urheber- und Leistungsschutzrecht nicht zugelassene
@@ -74,11 +76,10 @@ einzelner Inhalte oder kompletter Seiten ist nicht gestattet und strafbar. Ledig
 Kopien und Downloads für den persönlichen, privaten und nicht kommerziellen Gebrauch ist erlaubt.
 Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlaubnis zulässig.
 
-## § 4 Besondere Nutzungsbedingungen
+### § 4 Besondere Nutzungsbedingungen
 Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten
 Paragraphen abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle
 gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.
 
 
 Quelle: Impressum Generator von JuraForum.de
-
